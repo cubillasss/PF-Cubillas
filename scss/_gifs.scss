@@ -1,0 +1,32 @@
+.gifs {
+    display: flex;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+
+    img {
+        margin: 10px;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: transform 0.5s ease;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .gifs {
+        display: flex;
+        justify-content: center;
+        max-width: 900px;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .col-md-4 {
+        width: 100%;
+    }
+}
